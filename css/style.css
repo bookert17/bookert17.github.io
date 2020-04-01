@@ -1714,20 +1714,21 @@ form label {
   padding-bottom: 2em !important;
 }
 
-.gtco-loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+/*.gtco-loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader.gif) center no-repeat #fff;
 }
 
-.js .animate-box {
-  opacity: 0;
-}
-
+.animate-box {
+	.js & {
+		opacity: 0;
+	}
+}*/
 @media screen and (max-width: 768px) {
   .gtco-nav .gtco-contact {
     text-align: left !important;

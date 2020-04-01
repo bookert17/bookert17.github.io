@@ -306,7 +306,7 @@
 		owlCarousel();
 		goToTop();
 		goToForm();
-		loaderPage();
+		//loaderPage();
 		counterWayPoint();
 		dateForm();
 		parallax();
