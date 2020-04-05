@@ -1399,7 +1399,7 @@ display: none !important;
 }
 .btn-primary {
 	background: $brand-secondary;
-	color: $brand-white;
+	color: $brand-white !important;
 	border: 2px solid $brand-secondary!important;
 	&:hover, &:focus, &:active {
 		background: transparent !important;
