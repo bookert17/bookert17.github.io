@@ -1039,7 +1039,7 @@ form {
 
 	
 
-	.form-control, .lp-form-fieldInput {
+	.form-control, input.lp-form-fieldInput {
 		background: transparent;
 		color: $brand-white;
 		font-size: 16px!important;
@@ -1082,7 +1082,7 @@ form {
 		.form-group, .marketing-field {
 			width: 100%!important;
 			margin-bottom: 10px;
-			.form-control, .lp-form-fieldInput {
+			.form-control, input.lp-form-fieldInput {
 				width: 100%;
 
 			}
@@ -1554,13 +1554,13 @@ display: none !important;
 	}
 }
 // Form Input Field
-.form-control, .lp-form-fieldInput {
+.form-control, input.lp-form-fieldInput {
 	box-shadow: none;
 	background: #fff;
 	border: 2px solid rgba(0, 0, 0, 0.1);
 	height: 46px;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 600;
 	padding-left: 15px;
 	padding-right: 15px;
   	&:active, &:focus {

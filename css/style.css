@@ -1090,7 +1090,7 @@ form label {
   background: #ff8c00;
 }
 
-#gtco-subscribe .form-control, #gtco-subscribe .lp-form-fieldInput {
+#gtco-subscribe .form-control, #gtco-subscribe input.lp-form-fieldInput {
   background: transparent;
   color: #fff;
   font-size: 16px !important;
@@ -1100,26 +1100,26 @@ form label {
   transition: 0.5s;
 }
 
-#gtco-subscribe .form-control:focus, #gtco-subscribe .lp-form-fieldInput:focus {
+#gtco-subscribe .form-control:focus, #gtco-subscribe input.lp-form-fieldInput:focus {
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.8) !important;
 }
 
-#gtco-subscribe .form-control::-webkit-input-placeholder, #gtco-subscribe .lp-form-fieldInput::-webkit-input-placeholder {
+#gtco-subscribe .form-control::-webkit-input-placeholder, #gtco-subscribe input.lp-form-fieldInput::-webkit-input-placeholder {
   color: #fff;
 }
 
-#gtco-subscribe .form-control:-moz-placeholder, #gtco-subscribe .lp-form-fieldInput:-moz-placeholder {
+#gtco-subscribe .form-control:-moz-placeholder, #gtco-subscribe input.lp-form-fieldInput:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
 
-#gtco-subscribe .form-control::-moz-placeholder, #gtco-subscribe .lp-form-fieldInput::-moz-placeholder {
+#gtco-subscribe .form-control::-moz-placeholder, #gtco-subscribe input.lp-form-fieldInput::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
 
-#gtco-subscribe .form-control:-ms-input-placeholder, #gtco-subscribe .lp-form-fieldInput:-ms-input-placeholder {
+#gtco-subscribe .form-control:-ms-input-placeholder, #gtco-subscribe input.lp-form-fieldInput:-ms-input-placeholder {
   color: #fff;
 }
 
@@ -1138,7 +1138,7 @@ form label {
   margin-bottom: 10px;
 }
 
-#gtco-subscribe .form-inline .form-group .form-control, #gtco-subscribe .form-inline .form-group .lp-form-fieldInput, #gtco-subscribe .form-inline .marketing-field .form-control, #gtco-subscribe .form-inline .marketing-field .lp-form-fieldInput {
+#gtco-subscribe .form-inline .form-group .form-control, #gtco-subscribe .form-inline .form-group input.lp-form-fieldInput, #gtco-subscribe .form-inline .marketing-field .form-control, #gtco-subscribe .form-inline .marketing-field input.lp-form-fieldInput {
   width: 100%;
 }
 
@@ -1676,19 +1676,19 @@ form label {
   opacity: 1;
 }
 
-.form-control, .lp-form-fieldInput {
+.form-control, input.lp-form-fieldInput {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #fff;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 46px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.form-control:active, .form-control:focus, .lp-form-fieldInput:active, .lp-form-fieldInput:focus {
+.form-control:active, .form-control:focus, input.lp-form-fieldInput:active, input.lp-form-fieldInput:focus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
