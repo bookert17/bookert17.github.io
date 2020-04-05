@@ -1039,7 +1039,7 @@ form {
 
 	
 
-	.form-control, input.lp-form-fieldInput {
+	.form-control, input.lp-form-fieldInput, select.lp-form-fieldInput {
 		background: transparent;
 		color: $brand-white;
 		font-size: 16px!important;
@@ -1070,6 +1070,7 @@ form {
 
 	}
 	.btn {
+		font-size: 1.3em;
 		border: none!important;
 		background: $brand-primary;
 		color: $brand-white;
@@ -1082,7 +1083,7 @@ form {
 		.form-group, .marketing-field {
 			width: 100%!important;
 			margin-bottom: 10px;
-			.form-control, input.lp-form-fieldInput {
+			.form-control, input.lp-form-fieldInput, select.lp-form-fieldInput {
 				width: 100%;
 
 			}
@@ -1554,7 +1555,7 @@ display: none !important;
 	}
 }
 // Form Input Field
-.form-control, input.lp-form-fieldInput {
+.form-control, input.lp-form-fieldInput, select.lp-form-fieldInput {
 	box-shadow: none;
 	background: #fff;
 	border: 2px solid rgba(0, 0, 0, 0.1);
