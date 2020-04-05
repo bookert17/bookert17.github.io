@@ -1039,7 +1039,7 @@ form {
 
 	
 
-	.form-control {
+	.form-control, .lp-form-fieldInput {
 		background: transparent;
 		color: $brand-white;
 		font-size: 16px!important;
@@ -1079,10 +1079,10 @@ form {
 		padding-right: 50px;
 	}
 	.form-inline {
-		.form-group {
+		.form-group, .marketing-field {
 			width: 100%!important;
 			margin-bottom: 10px;
-			.form-control {
+			.form-control, .lp-form-fieldInput {
 				width: 100%;
 
 			}
@@ -1554,7 +1554,7 @@ display: none !important;
 	}
 }
 // Form Input Field
-.form-control {
+.form-control, .lp-form-fieldInput {
 	box-shadow: none;
 	background: #fff;
 	border: 2px solid rgba(0, 0, 0, 0.1);
