@@ -173,33 +173,39 @@ h1, h2, h3, h4, h5, h6, figure {
 	margin: 0 0 20px 0;
 }
 
-ul.checkmark-list {
-	list-style: none;
-	margin: 20px 0 30px;
-	li{
-		display: block;
-		font-family: "din-web",Arial,Helvetica,sans-serif !important;
-		color: #333 !important;
-		font-size: 1.3em;
-		line-height:2em;
-		letter-spacing: 0.6px !important;
-		text-indent: -40px;
-		text-transform: none !important;
-		&::before {
-			content: "\e91d";
-			font-family: "olb-icon";
-			color: #007151;
-			speak: none;
-			font-style: normal;
-			font-weight: normal;
-			font-variant: normal;
-			text-transform: none;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			margin-left: 0;
-			margin-right: 10px;
-			background-color: transparent;
+.gtco-section {
+	ul {
+		list-style: none;
+		margin: 20px 0 30px;
+		li{
+			display: block;
+			font-family: "din-web",Arial,Helvetica,sans-serif !important;
+			color: #333 !important;
+			font-size: 1.3em;
+			line-height:2em;
+			letter-spacing: 0.6px !important;
+			text-indent: -40px;
+			text-transform: none !important;
+			div > div {	
+			}
+			&::before {
+				content: "\e91d";
+				font-family: "olb-icon";
+				color: #007151;
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				margin-left: 0;
+				margin-right: 10px;
+				background-color: transparent;
+				
+			}
+			
 		}
 	}
 }
@@ -288,7 +294,7 @@ h2 {
 		padding: 20px 0;
 	}
 	#gtco-logo {
-		height: 78px;
+		height: 128px;
 		margin: 0;
 		padding: 0;
 		text-transform: uppercase;
@@ -783,7 +789,7 @@ h2 {
 
 form {
 	label {
-		color: #fff;
+		/*color: #fff;*/
 		font-weight: normal!important;
 	}
 }
@@ -1378,7 +1384,7 @@ display: none !important;
 
 // Buttons
 .btn {
-	font-size: 1em;
+	font-size: 1.3em;
 	margin-right: 4px;
 	margin-bottom: 4px;
 	font-family: $font-primary;
@@ -1398,10 +1404,17 @@ display: none !important;
 	}
 }
 .btn-primary {
+	a {
+		color: $brand-white !important;
+		font-size: 1.3em;
+	}
 	background: $brand-secondary;
 	color: $brand-white !important;
 	border: 2px solid $brand-secondary!important;
 	&:hover, &:focus, &:active {
+		a {
+			color: $brand-secondary !important;
+		}
 		background: transparent !important;
 		border-color: lighten($brand-secondary, 5%)!important;
 		color: $brand-secondary;

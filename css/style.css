@@ -88,12 +88,12 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
-ul.checkmark-list {
+.gtco-section ul {
   list-style: none;
   margin: 20px 0 30px;
 }
 
-ul.checkmark-list li {
+.gtco-section ul li {
   display: block;
   font-family: "din-web",Arial,Helvetica,sans-serif !important;
   color: #333 !important;
@@ -104,7 +104,7 @@ ul.checkmark-list li {
   text-transform: none !important;
 }
 
-ul.checkmark-list li::before {
+.gtco-section ul li::before {
   content: "\e91d";
   font-family: "olb-icon";
   color: #007151;
@@ -224,7 +224,7 @@ h2 {
 }
 
 .gtco-nav #gtco-logo {
-  height: 78px;
+  height: 128px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -788,7 +788,7 @@ h2 {
 }
 
 form label {
-  color: #fff;
+  /*color: #fff;*/
   font-weight: normal !important;
 }
 
@@ -1467,7 +1467,7 @@ form label {
 }
 
 .btn {
-  font-size: 1em;
+  font-size: 1.3em;
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "din-web", Arial, Helvetica, sans-serif;
@@ -1498,10 +1498,19 @@ form label {
   border: 2px solid #ff8c00 !important;
 }
 
+.btn-primary a {
+  color: #fff !important;
+  font-size: 1.3em;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: transparent !important;
   border-color: #ff981a !important;
   color: #ff8c00;
+}
+
+.btn-primary:hover a, .btn-primary:focus a, .btn-primary:active a {
+  color: #ff8c00 !important;
 }
 
 .btn-primary.btn-outline {
