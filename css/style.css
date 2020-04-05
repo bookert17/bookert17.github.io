@@ -1494,7 +1494,7 @@ form label {
 
 .btn-primary {
   background: #ff8c00;
-  color: #fff;
+  color: #fff !important;
   border: 2px solid #ff8c00 !important;
 }
 
