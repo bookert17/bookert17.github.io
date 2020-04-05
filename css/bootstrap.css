@@ -1963,7 +1963,7 @@ output {
   color: #555555;
 }
 
-.form-control {
+.form-control, .lp-form-fieldInput {
   display: block;
   width: 100%;
   height: 42px;
@@ -1984,38 +1984,40 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
 }
 
-.form-control:focus {
+.form-control:focus, .lp-form-fieldInput:focus {
   border-color: #005039;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 80, 57, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 80, 57, 0.6);
 }
 
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, .lp-form-fieldInput::-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .lp-form-fieldInput:-ms-input-placeholder {
   color: #666;
 }
 
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, .lp-form-fieldInput::-webkit-input-placeholder {
   color: #666;
 }
 
 .form-control[disabled], .form-control[readonly],
-fieldset[disabled] .form-control {
+fieldset[disabled] .form-control, .lp-form-fieldInput[disabled], .lp-form-fieldInput[readonly],
+fieldset[disabled] .lp-form-fieldInput {
   background-color: #eeeeee;
   opacity: 1;
 }
 
 .form-control[disabled],
-fieldset[disabled] .form-control {
+fieldset[disabled] .form-control, .lp-form-fieldInput[disabled],
+fieldset[disabled] .lp-form-fieldInput {
   cursor: not-allowed;
 }
 
-textarea.form-control {
+textarea.form-control, textarea.lp-form-fieldInput {
   height: auto;
 }
 
@@ -2024,10 +2026,13 @@ input[type="search"] {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input[type="date"].form-control,
+  input[type="date"].form-control, input[type="date"].lp-form-fieldInput,
   input[type="time"].form-control,
+  input[type="time"].lp-form-fieldInput,
   input[type="datetime-local"].form-control,
-  input[type="month"].form-control {
+  input[type="datetime-local"].lp-form-fieldInput,
+  input[type="month"].form-control,
+  input[type="month"].lp-form-fieldInput {
     line-height: 42px;
   }
   input[type="date"].input-sm, .input-group-sm > input.form-control[type="date"],
@@ -2206,7 +2211,7 @@ select[multiple].input-sm,
   height: auto;
 }
 
-.form-group-sm .form-control {
+.form-group-sm .form-control, .form-group-sm .lp-form-fieldInput {
   height: 30px;
   padding: 5px 20px;
   font-size: 12px;
@@ -2214,13 +2219,13 @@ select[multiple].input-sm,
   border-radius: 3px;
 }
 
-.form-group-sm select.form-control {
+.form-group-sm select.form-control, .form-group-sm select.lp-form-fieldInput {
   height: 30px;
   line-height: 30px;
 }
 
-.form-group-sm textarea.form-control,
-.form-group-sm select[multiple].form-control {
+.form-group-sm textarea.form-control, .form-group-sm textarea.lp-form-fieldInput,
+.form-group-sm select[multiple].form-control, .form-group-sm select[multiple].lp-form-fieldInput {
   height: auto;
 }
 
@@ -2259,7 +2264,7 @@ select[multiple].input-lg,
   height: auto;
 }
 
-.form-group-lg .form-control {
+.form-group-lg .form-control, .form-group-lg .lp-form-fieldInput {
   height: 46px;
   padding: 10px 20px;
   font-size: 18px;
@@ -2267,13 +2272,13 @@ select[multiple].input-lg,
   border-radius: 6px;
 }
 
-.form-group-lg select.form-control {
+.form-group-lg select.form-control, .form-group-lg select.lp-form-fieldInput {
   height: 46px;
   line-height: 46px;
 }
 
-.form-group-lg textarea.form-control,
-.form-group-lg select[multiple].form-control {
+.form-group-lg textarea.form-control, .form-group-lg textarea.lp-form-fieldInput,
+.form-group-lg select[multiple].form-control, .form-group-lg select[multiple].lp-form-fieldInput {
   height: auto;
 }
 
@@ -2289,7 +2294,7 @@ select[multiple].input-lg,
   position: relative;
 }
 
-.has-feedback .form-control {
+.has-feedback .form-control, .has-feedback .lp-form-fieldInput {
   padding-right: 52.5px;
 }
 
@@ -2448,7 +2453,7 @@ select[multiple].input-lg,
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline .lp-form-fieldInput {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -2462,7 +2467,7 @@ select[multiple].input-lg,
   }
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control {
+  .form-inline .input-group .form-control, .form-inline .input-group .lp-form-fieldInput {
     width: auto;
   }
   .form-inline .input-group > .form-control {
@@ -4002,7 +4007,7 @@ tbody.collapse.in {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .navbar-form .form-control {
+  .navbar-form .form-control, .navbar-form .lp-form-fieldInput {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -4016,7 +4021,7 @@ tbody.collapse.in {
   }
   .navbar-form .input-group .input-group-addon,
   .navbar-form .input-group .input-group-btn,
-  .navbar-form .input-group .form-control {
+  .navbar-form .input-group .form-control, .navbar-form .input-group .lp-form-fieldInput {
     width: auto;
   }
   .navbar-form .input-group > .form-control {
