@@ -282,23 +282,12 @@
 	};
 
 	var goToForm = function(){
-		/*$('.js-goform').on('click', function(event){
+		$('.js-goform').on('click', function(event){
             console.log("action!");
-			$('html, body').animate({
-				scrollTop: $('div[data-editorblocktype="FormBlock"]').offset().top
-			}, 500 );
+			$('html,body').animate({scrollTop: $('div[data-content="signup"]').offset().top}, 500);
 			
 			return false;
-		});*/
-
-		// Slow scroll with anchors
-		(function($){
-			console.log("action!");
-			$(document).on('click', '.js-goform', function(e){
-				e.preventDefault();
-				$('html,body').animate({scrollTop: $('form').offset().top}, 500);
-			});
-		})(jQuery);
+		});
 
 	}
 	
