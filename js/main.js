@@ -282,23 +282,20 @@
 	};
 
 	var goToForm = function(){
+		
 		$('.js-goform').on('click', function(event){
-            console.log("action!");
-			$('html,body').animate({scrollTop: $('div[data-content="signup"]').offset().top}, 500);
+			event.preventDefault();
+			console.log("action!");
+			
+			$('html,body').animate({scrollTop: $('.copyright').offset().top}, 500);
 			
 			return false;
 		});
 
 	}
-	
-
-	MsCrmMkt.MsCrmFormLoader.on("formLoad", function(event) {
-		console.log("load!");
-			
-			goToForm();
-		 });
 		 
 	$(function(){
+		
 		mobileMenuOutsideClick();
 		formTab();
 		offcanvasMenu();
@@ -307,12 +304,11 @@
 		dropdown();
 		owlCarousel();
 		goToTop();
-		//loaderPage();
+		goToForm();
+		loaderPage();
 		counterWayPoint();
 		dateForm();
-		parallax();
 
-		
 	});
 
 
