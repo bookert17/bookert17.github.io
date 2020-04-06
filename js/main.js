@@ -281,7 +281,16 @@
 		});
 	};
 
-
+	var goToForm = function(){
+		$('.js-goform').on('click', function(event){
+            console.log("action!");
+			$('html, body').animate({
+				scrollTop: $('div[data-editorblocktype="FormBlock"]').offset().top
+			}, 500 );
+			
+			return false;
+		});
+	}
 	
 	$(function(){
 		mobileMenuOutsideClick();
