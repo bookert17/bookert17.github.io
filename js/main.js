@@ -292,6 +292,8 @@
 		});
 	}
 	
+
+
 	$(function(){
 		mobileMenuOutsideClick();
 		formTab();
@@ -305,6 +307,12 @@
 		counterWayPoint();
 		dateForm();
 		parallax();
+
+		MsCrmMkt.MsCrmFormLoader.on("formLoad", function(event) {
+			console.log("load!");
+				
+				goToForm();
+			 });
 	});
 
 
