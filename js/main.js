@@ -290,6 +290,15 @@
 			
 			return false;
 		});
+
+		// Slow scroll with anchors
+		(function($){
+			$(document).on('click', '.js-goform', function(e){
+				e.preventDefault();
+				$('html,body').animate({scrollTop: $('form').offset().top}, 500);
+			});
+		})(jQuery);
+
 	}
 	
 
