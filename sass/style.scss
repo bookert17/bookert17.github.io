@@ -1966,3 +1966,23 @@ display: none !important;
 		}
 	}
 }
+
+.onFormSubmittedFeedback {
+	display: block !important;
+	align-items: inherit !important;
+	background: inherit !important;
+	margin: inherit !important;
+
+	.onFormSubmittedFeedbackIcon {
+		height: 77px !important;
+		font-family: inherit !important;
+	}
+
+	.onFormSubmittedFeedbackMessage {
+		color: $brand-white !important;
+	}
+
+	.onFormSubmittedFeedbackButton  {
+		display: none !important;
+	}
+}
