@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-.carousel-box::before {
+.with-stoerer::before {
   content: '';
   background-image: url("../images/Stoerer_110x110.png");
   background-repeat: no-repeat;
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 768px) {
-  .carousel-box::before {
+  .with-stoerer::before {
     top: -90px;
   }
 }

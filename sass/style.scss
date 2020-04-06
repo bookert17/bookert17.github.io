@@ -225,6 +225,9 @@ h1, h2, h3, h4, h5, h6, figure {
 	@media screen and (min-width: $screen-sm) {
 		padding: 20px 30px 40px 30px;
 	}
+}
+
+.with-stoerer {
 	&::before {
 		content: '';
 		background-image: url('../images/Stoerer_110x110.png');
