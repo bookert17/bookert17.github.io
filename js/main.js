@@ -216,19 +216,6 @@
 
 	};
 
-	var goToForm = function(){
-		$('.js-goform').on('click', function(event){
-
-			event.preventDefault();
-
-			$('html, body').animate({
-				scrollTop: $('form').offset().top
-			}, 500, 'easeInOutExpo');
-			
-			return false;
-		});
-	}
-
 	var goToTop = function() {
 		
 		$('.js-gotop').on('click', function(event){
@@ -305,7 +292,6 @@
 		dropdown();
 		owlCarousel();
 		goToTop();
-		goToForm();
 		//loaderPage();
 		counterWayPoint();
 		dateForm();
