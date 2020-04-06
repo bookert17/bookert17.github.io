@@ -1975,11 +1975,15 @@ display: none !important;
 
 	.onFormSubmittedFeedbackIcon {
 		height: 77px !important;
-		font-family: inherit !important;
+		
 	}
 
 	.onFormSubmittedFeedbackMessage {
 		color: $brand-white !important;
+		padding: 30px 10px 40px 0px !important;
+		font-family: inherit !important;
+		text-align: left !important;
+
 	}
 
 	.onFormSubmittedFeedbackButton  {
