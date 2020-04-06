@@ -268,11 +268,6 @@
 		}
 	};
 
-
-	var dateForm = function() {
-		$('#callback_date').datepicker();
-	};
-
 	var parallax = function() {
 		$(window).stellar({
 			horizontalScrolling: false,
