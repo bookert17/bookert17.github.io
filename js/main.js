@@ -307,7 +307,6 @@
 		goToForm();
 		loaderPage();
 		counterWayPoint();
-		dateForm();
 
 	});
 
