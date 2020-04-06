@@ -293,7 +293,12 @@
 	}
 	
 
-
+	MsCrmMkt.MsCrmFormLoader.on("formLoad", function(event) {
+		console.log("load!");
+			
+			goToForm();
+		 });
+		 
 	$(function(){
 		mobileMenuOutsideClick();
 		formTab();
@@ -308,11 +313,7 @@
 		dateForm();
 		parallax();
 
-		MsCrmMkt.MsCrmFormLoader.on("formLoad", function(event) {
-			console.log("load!");
-				
-				goToForm();
-			 });
+		
 	});
 
 
