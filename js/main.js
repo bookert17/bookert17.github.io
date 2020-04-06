@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 	
 	//'use strict';
 
@@ -279,8 +279,6 @@
 	var goToForm = function(){
 		
 		$('.js-goform').on('click', function(event){
-			event.preventDefault();
-			console.log("action!");
 			
 			$('html,body').animate({scrollTop: $('.copyright').offset().top}, 500);
 			
