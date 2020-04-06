@@ -270,7 +270,7 @@
 
 
 	var dateForm = function() {
-		$('#date-start').datepicker();
+		$('#callback_date').datepicker();
 	};
 
 	var parallax = function() {
