@@ -300,17 +300,20 @@
 }());
 
 $( document ).ready(function() {
+
 	MsCrmMkt.MsCrmFormLoader.on("afterFormLoad", function(event) {
 	
 			$('#callback_date').datepicker();
 
-			$('.js-goform').on('click', function(event){
-			
-				console.log("goform");
-				$('html,body').animate({scrollTop: $('.copyright').offset().top}, 500);
-				
-				return false;
-			});
-
 	});
+
+	console.log("js-goform");
+	$('.js-goform').on('click', function(event){
+	
+		console.log("goform");
+		$('html,body').animate({scrollTop: $('.copyright').offset().top}, 500);
+		
+		return false;
+	});
+	
 });
