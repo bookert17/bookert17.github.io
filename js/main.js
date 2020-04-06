@@ -222,7 +222,7 @@
 			event.preventDefault();
 
 			$('html, body').animate({
-				scrollTop: $('.form-wrap').offset().top
+				scrollTop: $('form').offset().top
 			}, 500, 'easeInOutExpo');
 			
 			return false;
@@ -230,7 +230,7 @@
 	}
 
 	var goToTop = function() {
-
+		
 		$('.js-gotop').on('click', function(event){
 			
 			event.preventDefault();
