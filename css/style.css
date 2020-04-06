@@ -2136,4 +2136,26 @@ form label {
     font-size: 26px;
   }
 }
+
+.onFormSubmittedFeedback {
+  display: block !important;
+  -webkit-box-align: inherit !important;
+      -ms-flex-align: inherit !important;
+          align-items: inherit !important;
+  background: inherit !important;
+  margin: inherit !important;
+}
+
+.onFormSubmittedFeedback .onFormSubmittedFeedbackIcon {
+  height: 77px !important;
+  font-family: inherit !important;
+}
+
+.onFormSubmittedFeedback .onFormSubmittedFeedbackMessage {
+  color: #fff !important;
+}
+
+.onFormSubmittedFeedback .onFormSubmittedFeedbackButton {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */
