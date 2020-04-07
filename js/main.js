@@ -298,7 +298,7 @@
 
 
 }());
-
+/*
 $( document ).ready(function() {
 
 	MsCrmMkt.MsCrmFormLoader.on("afterFormLoad", function(event) {
@@ -317,3 +317,4 @@ $( document ).ready(function() {
 	});
 	
 });
+*/
